@@ -60,3 +60,6 @@ app.get('/api/:name', (request, response) => {
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
+
+
+// crud- create(post) Read(get) updatet(put) delete(delete)`
