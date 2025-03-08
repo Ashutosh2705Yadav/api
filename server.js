@@ -3,7 +3,11 @@ const app = express()
 const cors = require('cors')
 const PORT = 8000
 
-app.use(cors({ origin: "*" }));
+app.use(cors({
+    origin: "*", // Change this to specific domains for better security
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    allowedHeaders: "Content-Type,Authorization"
+}));
 
 let rappers = {
     '21 savage': {
